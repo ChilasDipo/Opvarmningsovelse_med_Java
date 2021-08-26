@@ -35,7 +35,7 @@ public class Lokke {
                     return "Stop";
                 }
                 Pattern p = Pattern.compile("[a-z&&[^qQ]]");  //Checks if input is between a and z except Q And q
-                // Pattern p = Pattern.compile("[0-9]"); // Better way with just checking if it is a number dosent work with nubmers higher than 9
+                // Pattern p = Pattern.compile("[0-9]"); // dosent work with nubmers higher than 9
                 Matcher m = p.matcher(input);
                 if (m.matches()) {
                     System.out.println("Fail");
